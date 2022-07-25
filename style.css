@@ -1,0 +1,51 @@
+.bg-img {
+    background-image: url('stars.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;
+}
+
+.moon-img {
+    background-repeat: none;
+    background-size: cover;
+    height: 40vh;
+}
+
+.up-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.p-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+}
+
+.r-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: red;
+}
+
+.click-up-button {
+    background-color: #59C7F6;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    color: rgb(229, 228, 228);
+    border: none;
+}
+
+.click-up-button:hover {
+    box-shadow: 0px 10px 5px -3px yellow;
+}
+
+.use-btn {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}

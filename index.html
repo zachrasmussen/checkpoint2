@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Moon</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-img">
+    <header class="container-fluid">
+        <section class="row m-0">
+            <div class="col-6 mt-3 text-center p-text text-warning ">
+                <p>Moon Miner</p>
+            </div>
+            <div id="cheese" class="col-6 mt-3 p-text justify-content-end">
+                <!-- <p class="text-center">Cheese:</p> -->
+            </div>
+        </section>
+    </header>
+
+
+    <main class="container-fluid">
+        <section id="moon" class="row">
+            <!-- <div class="col-12 mt-5 mb-5 d-flex justify-content-center">
+                <img class="img-fluid moon-img" src="moon.png" alt="">
+            </div> -->
+        </section>
+        <section class="row">
+            <div class="col-12 text-center text-warning m-3" onclick="mine()">
+                <div><b id="clickCheese">0</b><b> Cheese Per Click</b></div>
+
+                <div><b id="autoCheese">0</b><b> Cheese Every 3 Seconds</b></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container p-3 mb-3 fixed-bottom border border-3 border-light bg-dark">
+
+        <section class="row p-3">
+            <span class="col-6 up-text text-center mb-3">Clickable Upgrades</span>
+            <span class="col-6 up-text text-center mb-3">Automatic Upgrades</span>
+            <!--NOTE clickable upgrades-->
+            <div id="pickaxe" class="col-3 text-center text-warning">
+                <div class="text-warning" onclick="usePickaxe()">Use <span id="pickaxe-count">0</span>
+                    pickaxe!</div>
+                <button class="col-3 click-up-button m-3" onclick="purchasePickaxe()">
+                    <div><b id="pickaxeCost">100</b><b> Cheese</b></div>
+                </button>
+                <div>Pickaxe + <span id="pickaxe-mult">0</span></div>
+            </div>
+
+            <div id="cart" class="col-3 text-center text-warning">
+                <div class="text-warning" onclick="useCart()">Use <span id="cart-count">0</span>
+                    cart!</div>
+                <button class="col-3 click-up-button m-3" onclick="purchaseCart()">
+                    <div><b id="cartCost">200</b><b> Cheese</b></div>
+                </button>
+                <div>Cart + <span id="cart-mult">0</span></div>
+            </div>
+            <!--NOTE auto upgrades-->
+            <div id=" rover" class="col-3 text-center text-warning">
+                <div class="text-warning">Use <span id="rover-count">0</span>
+                    rover!</div>
+                <button class="col-3 click-up-button m-3" onclick="purchaseRover()">
+                    <div><b id="roverCost">500</b><b> Cheese</b></div>
+                </button>
+                <div>Rover + <span id="rover-mult">0</span></div>
+            </div>
+
+            <div id="miner" class="col-3 text-center text-warning">
+                <div class="text-warning">Use <span id="miner-count">0</span>
+                    miner!</div>
+                <button class="col-3 click-up-button m-3" onclick="purchaseMiner()">
+                    <div><b id="minerCost">1000</b><b> Cheese</b></div>
+                </button>
+                <div>Miner + <span id="miner-mult">0</span></div>
+            </div>
+        </section>
+
+    </footer>
+
+
+
+
+
+    <script src="app.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
